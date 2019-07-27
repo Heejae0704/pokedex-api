@@ -1,1 +1,1 @@
-web: node server.jsnpm nvm 
+web: node server.js 
