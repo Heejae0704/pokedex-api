@@ -41,7 +41,7 @@ function handleGetPokemon(req, res) {
     }
 
     if (!type) {
-        const result = POKEDEX.pokemon.find(pokemon => name.toLowerCase() === pokemon.name.toLowerCase())
+        const result = POKEDEX.pokemon.find(pokemon =>  pokemon.name.toLowerCase().includes(name.toLowerCase()))
         res.status(200).json(result);
     }
 
